@@ -17,8 +17,7 @@ public class Program01 {
 		 
 		 
 		 Select dropdownYear = new Select(driver.findElement(By.xpath("//select[@id='yearbox']")));
-		 dropdownYear.selectByValue("1926");
-		 
+		 dropdownYear.selectByValue("1926");		 
 		 
 		 Select dropdownMonth = new Select(driver.findElement(By.xpath("//select[@placeholder='Month']")));
 		 dropdownMonth.selectByVisibleText("March");

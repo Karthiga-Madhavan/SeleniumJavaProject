@@ -19,7 +19,7 @@ public class Program01 {
 	 
 	 driver.findElement(By.xpath("//input[@value='Male']")).click(); 
 	 
-	 driver.findElement(By.xpath("//button[@id='Button1']")).submit();	 
+	// driver.findElement(By.xpath("//button[@id='Button1']")).submit();	 
 	 
 	}
 

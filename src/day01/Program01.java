@@ -17,7 +17,7 @@ public class Program01 {
 	 
 	 driver.findElement(By.xpath("//input[@placeholder='First Name']")).clear();
 	 
-	 driver.findElement(By.xpath("//input[@value='Male']")).click();
+	 driver.findElement(By.xpath("//input[@value='Male']")).click(); 
 	 
 	 
 	}

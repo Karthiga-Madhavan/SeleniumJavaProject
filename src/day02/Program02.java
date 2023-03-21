@@ -8,8 +8,8 @@ public class Program02 {
 	public static void main(String[] args) {
 		WebDriver driver;	
 		driver = new ChromeDriver();
-		driver.get("https://demo.automationtesting.in/Register.html");
-		driver.navigate().to("https://demo.automationtesting.in/Register.html");
+	//	driver.get("https://demo.automationtesting.in/Register.html");
+		driver.navigate().to("https://demo.automationtesting.in/Register.html"); // any one of the ways can be used to launch the appln
 		
 		
 		driver.manage().window().maximize();
@@ -23,7 +23,7 @@ public class Program02 {
 		
 		driver.navigate().back();
 		
-		driver.navigate().forward();
+		driver.navigate().forward(); 
 		
 		driver.close();
 		

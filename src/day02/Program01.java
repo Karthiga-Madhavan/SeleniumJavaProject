@@ -12,9 +12,13 @@ public class Program01 {
 		 
 		 driver = new ChromeDriver();
 		 driver.get("https://demo.automationtesting.in/Register.html");	
+		 
 		 Select dropdownSkill = new Select(driver.findElement(By.xpath("//select[@id='Skills']")));
 		 dropdownSkill.selectByIndex(4);
 		 
+	//	 Select dropdownSelectCountry = new Select(driver.findElement(By.xpath("//span[@role='combobox']")));
+	//	 dropdownSelectCountry.selectByVisibleText("India");
+	 
 		 
 		 Select dropdownYear = new Select(driver.findElement(By.xpath("//select[@id='yearbox']")));
 		 dropdownYear.selectByValue("1926");		 

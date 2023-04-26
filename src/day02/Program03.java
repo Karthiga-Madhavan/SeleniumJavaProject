@@ -14,7 +14,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class Program03 {
 
 	
-	static WebDriver driver;
+	static WebDriver driver; 	// declare WebDriver globally
 	
 	public static void main(String[] args) throws IOException {
 	 	
@@ -26,10 +26,10 @@ public class Program03 {
 	 driver.get("https://demo.automationtesting.in/Register.html");	
 	 driver.findElement(By.xpath("//input[@placeholder='First Name']")).sendKeys("Test");
 	 screenShot("firstName");
-	 File srcFN= driver.findElement(By.xpath("//input[@placeholder='First Name']"))
+	 File srcFN= driver.findElement(By.xpath("//input[@placeholder='First Name']"))   //for SS of particular element
 	 .getScreenshotAs(OutputType.FILE);
-	 File desFN = new File("./screenshot/firstNameElement.png");
-	 FileUtils.copyFile(srcFN, desFN);
+	 File desFN = new File("./screenshot/firstNameElement.png");					  //for saving SS of only one element
+	 FileUtils.copyFile(srcFN, desFN);												  //for SS of particular element
 	 driver.findElement(By.xpath("//input[@placeholder='Last Name']")).sendKeys("Java");
 	 screenShot("lastName");
 	 
